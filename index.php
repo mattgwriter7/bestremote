@@ -31,7 +31,7 @@
 
 	<div id="hero">
 		<section>		
-			HERO
+			<br />
 		</section>	
 	</div>
 
@@ -47,20 +47,64 @@
 
 			<!-- THREE BOXES -->
 			<div class="grid_3">
-				<div class="box">
-					1st Box
+				<div class="box img white">
+				  <div class="content">	
+					<img src="./images/mattgarvin.jpg"/>
+				  </div>	
+				</div><!-- end:box -->
+
+				<div class="box middle">
+				  <div class="content blue_bordered">
+					<p><span class="oswald">Guess What?</span>  I know my pic looks silly.  It is meant to 
+					showcase my sense of humor! (And rugged good looks.)</p>
+					<p> I am passionate about creating 
+					<span class="roboto">COOL STUFF</span> 
+					but I can laugh at myself, too.
+				  </div>	
 				</div><!-- end:box -->
 
 				<div class="box">
-					2nd Box
-				</div><!-- end:box -->
-
-				<div class="box">
-					3rd Box
+					<p class="dropcap">This site was made in about 
+						<span class="roboto">8&nbsp;HOURS</span> by Yours Truly.  I wanted to 
+						showcase my coding skills so I 
+						designed it from scratch, plus  
+						I stuck it  
+						on <span class="oswald">Github</span>. Want to have a look at the code?</p>
+						
+					<p>Check out the repo:<br />
+						<a href="https://github.com/mattgwriter7/bestremote" target="_blank">https://github.com/mattgwriter7...</a><br />
+						<div class="hint"><b>HINT</b> - It is public, so it should be  
+							easy to peruse. (Or you can go Old School and 
+							just View Source!)
+						</div>
+					</p>						
 				</div><!-- end:box -->
 			</div><!-- end:grid_3 -->		
 
 			<!-- TWO BOXES -->
+			<div class="grid_2">
+				<div class="box white">
+					<h1 class="roboto"">RECENT NEWS</h1>
+					<p>Three years ago I started working doing MOBILE&nbsp;DEVELOPMENT 
+					using FLUTTER for FLUID&nbsp;MOBILITY.  
+						I soon came to realize I LOVE FLUTTER!</p> 
+					<p>Please read my article on Medium:<br /> 
+					"5 Things I Love About Flutter"	
+				</div><!-- end:box -->
+				
+				<div class="box white">
+					<h1 class="roboto"">SHORT BIO</h1>
+					<p>A loooong time ago I started my career as a 
+						Graphic&nbsp;Designer. Then I became a Web&nbsp;Developer. 
+						Next I became a UI&nbsp;Designer, and 
+						most recently a Mobile&nbsp;Developer.</p>  
+					<p>I am a "Jack-of-all-trades" and... well 
+					   I am pretty decent at a few of them.</p>		
+				</div><!-- end:box -->
+			</div><!-- end:grid_2 -->
+
+
+			<!-- TWO MORE BOXES -->
 			<div class="grid_2">
 				<div class="box">
 					<h4 class="roboto"">BOXES and GRIDS</h4>

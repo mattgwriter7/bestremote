@@ -56,13 +56,13 @@ table {
 		That's it for the "reset".  From here on is
 		my own code.
 		"GENERAL" stuff is used for all of my sites.
-		"CUSTOM" stuff is for a specific instance...
+		"CUSTOM" stuff is for a specific instances...
 */
 
 
 		
 		
-/* 	=========================================
+	/* 	=========================================
 		GENERAL COMMON SELECTORS
 		========================================= */
 
@@ -100,7 +100,10 @@ table {
 			margin-bottom: .25em;
 		}		
 
-		p { margin-bottom: 1em; }
+		/* 	make paragraphs that are not last have a bottom margin, adapted from
+		 	https://stackoverflow.com/questions/36321736/manage-margins-so-that-the-last-elements-have-no-margins
+		*/
+		p:not(:last-child) { margin-bottom:1em; }
 		b { font-weight: bold; }
 		i { font-style: oblique; }
 
@@ -128,7 +131,7 @@ table {
 			margin-left: 1em;
 		}		
 
-/* 	=========================================
+	/* 	=========================================
 		CUSTOM SELECTORS
 		========================================= */
 
@@ -163,11 +166,27 @@ table {
 			position: relative;
 			font-size: 150%;
 			background-color: #ccc;
-
 			line-height: 1.5;
 		}
 
-/* 	=========================================
+		div.box.img div.content {
+			display: flex;
+			justify-content: center;
+			height: 100%;
+			/* background-color: #ccc; */
+			align-items: center;
+		}
+
+		div.box.img { 
+		  margin: 0;
+    	  padding: 0;
+		}
+		div.box.img div.content img {  
+		  height: 50vw;
+    	  max-height: 380px;		  
+		}  
+
+	/* 	=========================================
 		COLORS and EFFECTS
 		========================================= */
 
@@ -182,7 +201,8 @@ table {
 
 		.oswald 	{ font-family: 'Oswald', sans-serif; }
 		.verdana 	{ font-family: Verdana, Geneva, sans-serif; }
-		.roboto 	{ font-family: 'Roboto Slab', serif; }		
+		.roboto 	{ font-family: 'Roboto Slab', serif; }	
+		.mono		{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }	
 
 		/* 	this dropcap code was adapted from
 				https://www.newyorker.com/ */
@@ -201,7 +221,26 @@ table {
 			padding: 0px 0.05em 0px 0px;
 		}
 
+		div.box.middle {
+		  background-color: transparent;	
+		  padding: 0;
+		}
+
+		div.box.middle .content {	
+		  position: absolute;
+    	  top: 50%;
+    	  transform: translateY(-50%);
+    	  text-align: left;
+		  padding: 1em 1.25em;
+		}
+
+		/* colors */	
+		div.box.white { background-color: #fff;  }
 		div.box.ltgrey { background-color: #eee; }
+		div.blue_bordered { background-color: #1c567e; border: 3px solid #000080;
+			color: #fff; font-size: 80%; line-height: 1.25; }
+
+		div.hint { font-size: 72%; line-height: 1.1; font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }
 
 /* 	=========================================
 		MOBILE AND NARROW DEVICES
@@ -229,5 +268,13 @@ table {
 	.grid_3 { grid-template-columns: 1fr 1fr 1fr; }
 	div.box { margin: 0; padding: 1em .75em 1em 1em; border-top: 5px solid #999; }
 
+	div.box.white { border: none; padding: 1em; }
+
+	div.box.middle .content {
+	  position: static;
+      transform: none;
+	  padding-top: 1.5em 1em 2em 1.5em;
+	  font-size: 100%;
+	}
 
 }
