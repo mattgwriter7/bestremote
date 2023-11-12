@@ -23,7 +23,7 @@
 
 	<header>
 		<section>
-			HEADER
+			<span class="oswald">MATTGARVIN.COM</span>
 		</section>	
 	</header>
 
@@ -42,9 +42,7 @@
 
 			<!-- ONE BOX -->
 			<div class="grid_1 top_gutter">
-				<div class="box">
-					One and only Box
-				</div><!-- end:box -->
+			<?php include $dots . '/_BLURBS/welcome.htm'; ?>
 			</div><!-- end:grid_1 -->		
 
 			<!-- THREE BOXES -->
