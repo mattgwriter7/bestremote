@@ -77,7 +77,10 @@ table {
 			position: relative;
 		}
 		
-		header { padding: 0; height: 200px; background-color: red; }
+		header { 
+			padding: .6em .5em; background-color: #1c567e; color: #fff; 
+			font-size: 4vw; letter-spacing: .1vw; font-weight: bold;
+		}
 		
 		footer { padding: 0; height: 200px; background-color: red; }		
 		
@@ -129,6 +132,22 @@ table {
 		CUSTOM SELECTORS
 		========================================= */
 
+			div#hero {
+				background-image: url(../images/hero_background_2.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				height: 200px;
+			}
+
+		div.top_gutter {
+			border-top: 1.5em solid transparent;
+		}		
+
+		section.bottom_gutter {
+			border-bottom: 0.2em solid transparent;
+		}			
+
 		.grid_1 { grid-template-columns: 1fr; }		
 		.grid_2 { grid-template-columns: 1fr 1fr; }
 		.grid_3 { grid-template-columns: 1fr 1fr 1fr; }
@@ -144,7 +163,45 @@ table {
 			position: relative;
 			font-size: 150%;
 			background-color: #ccc;
+
+			line-height: 1.5;
 		}
+
+/* 	=========================================
+		COLORS and EFFECTS
+		========================================= */
+
+		html, body, footer {
+				background-color: #1c567e;
+		}
+
+		main {
+				background-color: #fff;
+				border-top: 1px solid transparent;
+		}		
+
+		.oswald 	{ font-family: 'Oswald', sans-serif; }
+		.verdana 	{ font-family: Verdana, Geneva, sans-serif; }
+		.roboto 	{ font-family: 'Roboto Slab', serif; }		
+
+		/* 	this dropcap code was adapted from
+				https://www.newyorker.com/ */
+		div.dropcap::first-letter,
+		p.dropcap::first-letter {
+			/* font-family: TNYAdobeCaslonPro, "Times New Roman", Times, serif; */
+			font-family: 'Roboto Slab', serif;
+			letter-spacing: normal;
+			line-break: auto;
+			line-height: 1em;
+			font-size: 73px;
+			font-weight: 400;
+			overflow-wrap: normal;
+			float: left;
+			margin-bottom: -0.3em;
+			padding: 0px 0.05em 0px 0px;
+		}
+
+		div.box.ltgrey { background-color: #eee; }
 
 /* 	=========================================
 		MOBILE AND NARROW DEVICES
@@ -160,8 +217,17 @@ table {
 		border-top: none; /* HACK */
 	}
 	
-	section {
-		width: 100%;
-	}
+	section { width: 100%; }
+
+	div.top_gutter { border-top: none; }
+	section.bottom_gutter { border-bottom: none; }	
+
+	.grid_1, .grid_2, .grid_3  { display: block; margin-bottom: 0; }
+	
+	.grid_1 { grid-template-columns: 1fr; }
+	.grid_2 { grid-template-columns: 1fr 1fr; }
+	.grid_3 { grid-template-columns: 1fr 1fr 1fr; }
+	div.box { margin: 0; padding: 1em .75em 1em 1em; border-top: 5px solid #999; }
+
 
 }

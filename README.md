@@ -10,8 +10,8 @@ There are two markdown files:
 * NOTES.md is for longer stuff (often mentioned in this README)...
 
 ## LEFT OFF
-* made site structure
+* added grids, header image, basic CSS, and 1st blurb
 
 ## NEXT STEPS
 * add FTP account 
-* upload site bones, test it
+* add more blurbs

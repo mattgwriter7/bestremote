@@ -12,5 +12,9 @@ This is a place for stuff that doesn't fit under README
 ## GOAL
 At themoment my goal is to make a single page website.  It is going to have super clean, spartan code, and ideally will be able to be used as a boiler plate for other simple sites when I need to spin one off.
 
+## IDEAS
+Make it so many websites all go to bestremoteworker.com (using 
+querystring).
+
 ## HISTORY
 ... none yet...
