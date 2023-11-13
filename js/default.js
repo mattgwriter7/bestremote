@@ -7,7 +7,14 @@ $(function() {
 
 	function init() {
 		console.log( 'Loaded version ' + window.ver );
-        return;
+    
+		setTimeout(function(){ 
+			$( '.fadein' ).fadeIn( 'fast', function() {
+				// Animation complete
+			});		
+		}, 2000);
+		
+		return;
 	}
 
 	// 	===========================================	

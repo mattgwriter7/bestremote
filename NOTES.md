@@ -13,8 +13,13 @@ This is a place for stuff that doesn't fit under README
 At themoment my goal is to make a single page website.  It is going to have super clean, spartan code, and ideally will be able to be used as a boiler plate for other simple sites when I need to spin one off.
 
 ## IDEAS
-Make it so many websites all go to bestremoteworker.com (using 
-querystring).
+Make it so many websites all go to one domain, but with a param in querystring indicating whether the focus is:
+1. remote work
+2. writing
+3. coding
+And then re-order those "panels" accordingly.
+
+Have it so that the other panels are closed.  (Right now, I have those panels indicated with dots for each panel...)
 
 ## HISTORY
 ... none yet...
