@@ -10,9 +10,10 @@ There are two markdown files:
 * NOTES.md is for longer stuff (often mentioned in this README)...
 
 ## LEFT OFF
-* made profile2 branch
+* made tweaks branch
 
 ## NEXT STEPS
+* see NOTES.md "IDEAS"
 * convert the blurbs
 * add small graphics (like popup icon, github logo)
 * make github link mobile / desktop
