@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+<title>TEMPLATE</title>
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">			
+<link rel="stylesheet" type="text/css" href="./css/default.css?t=<?php print $ver; ?>">
+<style>
+<!-- CUSTOM CSS FOR THIS PAGE -->
+		
+</style>
+</head>
+
+<body class="">
+
+	<header class="ruler">
+		<section class="ruler">
+			<a name="top">SITE TITLE HERE</a>
+		</section>	
+	</header>
+
+
+
+	<div id="hero">
+		<section>		
+			<br />
+		</section>	
+	</div>
+
+
+
+	<main>
+		<section>		
+
+
+
+			<div id="INTRO" class="panel">
+				<div class="interior">
+
+					<div class="sticky">These orange
+						notes are "stickies."  They are meant to highlight
+						something important.<br />
+						<span class="note"><u>Note</u>: click to 
+							dismiss</span>
+					</div>
+				
+					<h1>Hey Now!</h1>
+					<p class="dropcap">This is a paragraph tag with
+					a class="dropcap".  Dropcaps only look good if
+					there is a big block of text. (You don't want a
+					dangling dropcap if the paragraph is just one
+					short sentence, <i>Silly!</i>) To be honest, this 
+					paragraph is just
+					<i>barely</i> long enough.</p>
+					
+					
+					<aside>
+						<img src="./images/zeppelin.jpg"/>
+						<div>
+							<b class="r tall big">This is an Aside -</b> 
+								Quite literally.<br />
+								There is a writeup about &lt;aside&gt;
+								tags in the 
+								<b class="r">Little&nbsp;Touches</b> panel
+									further down.<br />
+								<span class="note">
+									Photo by Sam Shere - 
+									<a href="https://commons.wikimedia.org/w/index.php?curid=19329337">Wikimedia Commons</a>.<span class="material-icons small _2x">&#xe89e;</span>   
+								</span>	
+							<!-- TAKE 1
+							<b class="r tall big">This Dude?</b> That's
+								The Notorious "MRG", Son.<br />
+								If I gotz to spell it out for you, the
+								"MRG" is "Matthew R. Garvin." As for
+								the middle initial, that is
+								just part of the mystique.
+							-->
+						</div>
+					</aside>
+					
+					
+					<p>The "Hey Now!" is an 
+					<b class="m">&lt;h1&gt;</b>
+						tag.  It looks
+						all fancy because some CSS is applied to it.  These
+						"main heading" tags should be used judiciously. (I
+						am only using them at the start of "panels," which
+						I explain in a moment.)
+					</p>
+					
+					<h2>Panels</h2>
+					<p>A "div.panel" is like a section that
+						can be shown or hidden.  They are denoted by
+						a lot of vertical padding, plus
+						the little black dots on top and
+						bottom. (The content between the dots
+						is the "panel.")</p>
+						
+					<p>Panels always start with a "div.interior"
+						which is used to actually add the padding.</p>
+						
+					<p>This section on panels starts with an &lt;h2&gt; tag,
+						which (obviously) is a bit smaller than an
+						&lt;h1&gt; tag.  I don't use any headings
+						besides h1 and h2.<br />
+						<span class="note"><u>NOTE:</u> H1s and H2s
+							may have different margins and paddings when
+							used in a grid. "Grids" are explained below.
+						</span>
+					</p>		
+
+					<h2>Other Stuff</h2>
+					<p>There are "asides", "blockquotes",
+						and other things to come, to liven
+						up these panels.</p>
+
+				</div><!-- end:interior -->
+			</div><!-- end:panel -->
+			
+			
+			
+			<div id="FONTS" class="panel">
+				<div class="closed">
+					Do you want to see my<br />
+					<b class="r big">FONTS</b> write-up?<br />
+					<button class="show_me" data-panel="FONTS"
+						data-sticky="sticky_panel">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+				<div class="sticky" id="sticky_panel">Click the blue "show&nbsp;me!"
+					button to open up this panel.
+				</div>
+
+			</div><!-- end:panel -->
+
+
+
+
+			<div id="GRIDS" class="panel">
+			
+				<div class="closed">
+					Do you want to see my<br />
+					<b class="r big">GRIDS</b> write-up?<br />
+					<button class="show_me" data-panel="GRIDS">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+			</div><!-- end:panel -->	
+			
+
+
+			
+			<div id="TOUCHES" class="panel">
+			
+				<div class="closed">
+					Do you want to see my<br />
+					<b class="r big">LITTLE TOUCHES</b> write-up?<br />
+					<button class="show_me" data-panel="TOUCHES">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+				
+			</div><!-- end:panel -->			
+
+
+
+
+			<div id="BACKSTORY" class="panel">
+				<div class="closed">
+					Do you want to see the<br />
+					<b class="r big">BACKSTORY</b> write-up, which
+					explains how and why I made this site?<br />
+					<button class="show_me" data-panel="BACKSTORY">show me!</button>
+					<div class="spinner"><br /></div>
+					<span class="spinner_mssg"></span>					
+				</div>	
+
+			</div><!-- end:panel -->
+
+
+
+			
+			<div class="pre_footer"><br /></div>
+		
+		</section>		
+	</main>
+
+	<footer>
+		<section>
+			<div class="grid_3">
+				<div class="box">
+					FOOTER BOX 1<br />
+					(Contact)
+				</div>
+				<div class="box">
+					FOOTER BOX 2<br />
+					(Social Media)
+				</div>
+				<div class="box">
+					FOOTER BOX 3<br />
+					(??)
+				</div>						
+			</div><!-- end this grid row -->			
+		</section>	
+	</footer>
+
+
+	<script
+		src="https://code.jquery.com/jquery-3.6.4.min.js"
+		integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+		crossorigin="anonymous"></script>
+	<script>
+
+		var ver = '<?php print $ver; ?>';
+		
+	</script>
+	<script src="./js/default.js?t=<?php print $ver; ?>"></script>	
+	<script>
+	<!-- CUSTOM JS FOR THIS PAGE -->
+
+
+	</script>	
+</body>
+</html>
