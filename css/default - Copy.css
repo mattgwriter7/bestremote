@@ -62,7 +62,7 @@ table {
 
 		
 		
-/* 	=========================================
+	/* 	=========================================
 		GENERAL COMMON SELECTORS
 		========================================= */
 
@@ -70,13 +70,10 @@ table {
 			position: relative;
 			height: 100%;
 			font-family: Verdana, Geneva, sans-serif;
-			font-size: 16px;
 		}
 				
-		main { padding: 1.5em 0;  }
+		main { padding: 1.5em 0; }
 		
-		/* 	sections are for centering header, footer, 
-				and main content */
 		section {
 			width: 1200px;
 			margin: 0 auto;
@@ -94,27 +91,15 @@ table {
 
 		
 		header { 
-			background-color: #1c567e; 
-			padding: 2em 0 2.5em 0;
+			padding: .6em .5em; background-color: #1c567e; color: #fff; 
+			font-size: 4vw; letter-spacing: .1vw; font-weight: bold;
+			text-shadow: 1px 1px 1px #000, 3px 3px 0px #999;
 		}
 		
-				header section a {
-					font-size: 80px; letter-spacing: 1px; 
-					font-weight: bold;
-					text-shadow: 1px 1px 1px #000, 3px 3px 0px #999;
-					color: #fff;
-					font-family: 'Oswald', sans-serif;
-					display: inline-block;
-					box-sizing: border-box;
-				}
-		
 		footer { 
-			padding: 0; 
-			min-height: 770px;
+			padding: 0; min-height: 200px; background-color: red;
 		}		
 		
-		/*	the "pre_footer" adds some bottom 
-				dots that come before the footer */
 		div.pre_footer { 
 			padding: 1em 0 0 0;
 			margin-bottom: 1.5em;
@@ -123,33 +108,36 @@ table {
 			overflow: hidden;
 		}
 		
-		
-		
-		
-		
-		/* HEADINGS */
 		h1 { 
-			font-family: 'Roboto Slab', serif; 
-			font-size: 80px; letter-spacing: 2px; font-weight: bold;
+			padding: 0.75em .5em .5em .25em; color: #000; 
+			font-size: 6vw; letter-spacing: .1vw; font-weight: bold;
 			text-shadow: 1px 1px 1px #fff, 3px 3px 0px #999;
-			margin-bottom: .45em; line-height: 1.1;
+			font-style: oblique;
 		}
 
 		h2 {
-			font-family: 'Roboto Slab', serif; 
-			font-size: 55px; letter-spacing: 1px; font-weight: bold;
-			text-shadow: 1px 1px 1px #fff, 3px 3px 0px #999;
-			margin: .75em 0 .15em 0; line-height: 1;
+			font-size: 150%;
+			font-weight: bold;
+			margin-bottom: 0;
+			line-height: 1.1;
 		}
 
-		/* FONT STYLES */
+		h3 { font-size: 100%; line-height: 1.1; margin-bottom: .25em; }
+		
+		h4 {
+			font-size: 100%;
+			font-weight: bold;
+			margin-bottom: .25em;
+			line-height: 1.1;
+		}		
+
 		/* 	make paragraphs that are not last have a bottom margin, adapted from
-				https://stackoverflow.com/questions/36321736/manage-margins-so-that-the-last-elements-have-no-margins	*/
+		 	https://stackoverflow.com/questions/36321736/manage-margins-so-that-the-last-elements-have-no-margins
+		*/
 		p:not(:last-child) { margin-bottom:1em; }
 		b { font-weight: bold; }
 		i { font-style: oblique; }
 
-		/* LINKS */
 		a:link, a:visited, a:hover, a:active { color: blue; }
 		a.grey:link, a.grey:visited, a.grey:hover, a.grey:active { color: grey; }
 		a.black:link, a.black:visited, a.black:hover, 
@@ -163,9 +151,67 @@ table {
 			margin: 20px 0 5px 0;
 		}
 
-		ol { list-style: decimal; margin-left: 1.25em; }
-		ul { list-style: disc; margin-left: 1em; }		
 
+		ol {
+			list-style: decimal;
+			margin-left: 1.25em;			
+		}
+		
+		ul {
+			list-style: disc;
+			margin-left: 1em;
+		}		
+
+
+
+/* 	=========================================
+		CUSTOM SELECTORS
+		========================================= */
+
+			div#hero {
+				background-image: url(../images/hero_background_2.jpg);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				height: 200px;
+			}
+
+		div.top_gutter {
+			border-top: 1.5em solid transparent;
+		}		
+
+		section.bottom_gutter {
+			border-bottom: 0.2em solid transparent;
+		}			
+
+		div.hud {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			padding: .5em;
+			
+			box-sizing: border-box;
+			background-color: #ffd700;
+			margin-bottom: 10px;
+			border: 3px solid #ffbf00;
+			box-shadow: 2px 2px 7px black;
+			line-height: 1.5;
+			cursor: pointer;	
+
+			max-width: 50%;	
+		}
+		
+		div.panel { 
+			/* background-color: Yellow; */
+			min-height: 60px; 
+			border-top: 4px dotted #000;
+			margin-top: 2em;
+			font-size: 130%;
+			position: relative;
+		}
+		
+		div.panel div.closed { padding: 4em 2em 2em 2em; line-height: 2; }
+		
 		button {
 			margin-top: 10px;
 			background: #3498db;
@@ -196,65 +242,6 @@ table {
 			cursor: pointer;
 		}		
 
-		aside {
-			width: 50%;
-			padding: 0;
-			margin: 0 0 .5em 1.5em;
-			float: right;
-			background-color: #eee;
-			box-sizing: border-box;
-			line-height: 0;
-		}
-		
-		aside img { width: 100%; }
-		
-		aside div {
-			line-height: 1.2;
-			padding: 8px 10px 10px 15px;
-			background-color: #ddd;			
-		}
-		
-/* 	=========================================
-		CUSTOM SELECTORS
-		========================================= */
-
-		div#hero {
-			background-image: url(../images/hero_background_2.jpg);
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: cover;
-			height: 200px;
-		}
-
-		div.hud {
-			position: absolute;
-			right: 10px;
-			top: 25px;
-			padding: .5em;
-			box-sizing: border-box;
-			background-color: #ffd700;
-			margin-bottom: 10px;
-			border: 3px solid #ffbf00;
-			box-shadow: 2px 2px 7px black;
-			line-height: 1.2;
-			cursor: pointer;	
-			max-width: 50%;	
-		}
-
-		/* PANELS */
-		div.panel { 
-			border-top: 4px dotted #000; 
-			line-height: 1.5;
-			margin-top: 1em;
-			font-size: 130%;
-			position: relative;
-			box-sizing: border-box;
-		}
-		
-		div.panel div.closed { padding: 3.6em 2em 3em 2em; line-height: 2; }
-		div.panel div.interior { padding: 3.6em 2em 3em 2em; } 
-
-		/* GRIDS and BOXES */
 		.grid_1 { grid-template-columns: 1fr; }		
 		.grid_2 { grid-template-columns: 1fr 1fr; }
 		.grid_3 { grid-template-columns: 1fr 1fr 1fr; }
@@ -265,27 +252,51 @@ table {
     	margin-bottom: 1.5em;
 		}		
 
+		.grid_1.tight, .grid_2.tight, .grid_3.tight {
+    	margin-bottom: 0;
+		}	
+		
 		.box {
-			padding: 1em 1em 1em 1em;
+			padding: 1em 1em 1.5em 1em;
 			position: relative;
+			font-size: 150%;
 			background-color: #ccc;
-			min-height: 180px;			/* WILLFIX: good height? */
-			box-sizing: border-box;
+			line-height: 1.5;
 		}
 
-		.box.blank {
-			padding: 0;
-			background-color: transparent;
-			min-height: auto;
+		div.box.img div.content {
+			display: flex;
+			justify-content: center;
+			height: 100%;
+			/* background-color: #ccc; */
+			align-items: center;
 		}
+
+		div.box.img { 
+		  margin: 0;
+    	  padding: 0;
+		}
+		div.box.img div.content img {  
+		  height: 50vw;
+    	max-height: 380px;		  
+		}  
+		
+		div.scale_img div.content { width: 1200px; }
+		div.scale_img { margin: 0; padding: 0; }
+		div.scale_img div.content img { width: 100%; } 
 		
 
 /* 	=========================================
 		COLORS and EFFECTS
 		========================================= */
 
-		html, body, footer { background-color: #1c567e; }
-		main { background-color: #eee; }		
+		html, body, footer {
+			background-color: #1c567e;
+		}
+
+		main {
+			background-color: #fff;
+		}		
 		
 		.oswald 	{ font-family: 'Oswald', sans-serif;  }
 		.verdana 	{ font-family: Verdana, Geneva, sans-serif; }
@@ -298,7 +309,7 @@ table {
 		b.m, h2				{ font-family: Courier New,Courier,Lucida Sans 	
 										Typewriter,Lucida Typewriter,monospace; }	
 
-		/* DROP CAP */
+
 		/* 	this dropcap code was adapted from
 				https://www.newyorker.com/ */
 		div.dropcap::first-letter,
@@ -307,39 +318,69 @@ table {
 			font-family: 'Roboto Slab', serif;
 			letter-spacing: normal;
 			line-break: auto;
-			line-height: 75px;
-			font-size: 75px;
+			line-height: 1em;
+			font-size: 73px;
 			font-weight: 400;
 			overflow-wrap: normal;
 			float: left;
-			margin: -3px 0 -10px 0;
+			margin-bottom: -0.3em;
 			padding: 0px 0.05em 0px 0px;
 		}
 
+		div.box.highlighted {
+		  background-color: transparent;	
+		  padding: 0;
+			width: 80%;
+			line-height: 1.2;
+		}
+
+		div.box.highlighted.blue .content {
+			color: #fff; background-color: #1c567e; 
+			border: 5px solid #1c2951;
+		}
+		
+		div.box.highlighted .content {	
+		  position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: left;
+		  padding: .75em .75em;
+		}
+
+		div.box.centered {
+			background-image: url('../images/sunset.png');	
+			background-size: 100%;
+			background-repeat: no-repeat;
+		}
+		
+		div.box.centered .content {	
+			display: flex;
+			justify-content: center;
+			height: 100%;
+			align-items: center;
+			padding-top: 56.25%;
+			margin-top: .75em;
+			box-sizing: border-box;			
+		}
 		
 		/* font sizing  */
 		.tiny { font-size: 72%; }
 		.small { font-size: 80%; }
 		.big { font-size: 120%; letter-spacing: 1px; }
 		.huge { font-size: 150%; letter-spacing: 1px; }
-		.note { font-size: 80%; line-height: 1.2; }
-				/* remove bullet if this note is a list item */
-				li.note { list-style: none;	 }
-				
-		/* spacing */
-		h1.short,
-		h2.short { margin-bottom: 0; }
-		.grid_1.short, .grid_2.short, .grid_3.short {
-    	margin-bottom: 0;
+		h2.colossal { 
+			font-size: 80px; letter-spacing: 1px; 
+			line-height: 1; margin: 0; padding: 0;
+		}
+		
+		/* colors */	
+		div.box.white { background-color: #fff;  }
+		div.box.ltgrey { background-color: #eee; }
+		div.box.wide {
+			padding-left: 0; padding-right: 0; background-color: transparent;
 		}			
-		li.tall { margin-bottom: .25em; }	
-		ul.tall, ol.tall { margin-bottom: .75em; }
-		
-		
-		
-		
-		
-		
+
+		div.hint { font-size: 72%; line-height: 1.1; font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }
 		
 /* 	=========================================
 		MOBILE AND NARROW DEVICES
@@ -347,49 +388,67 @@ table {
 
 @media all and (max-width: 1190px) { 
 
-	html, body { background-color: #1c567e;	}
+	html, body {
+		/* background-color: #ffffe0;	 */
+		background-color: #fff;	
+	}
 
 	header { 
-		background-color: #1c567e; 
-		padding: 1.7em 0 1.9em 1.1em;
+		padding: 1em 1.25em; 
+		font-size: 7vw; letter-spacing: .2vw; font-weight: bold;
+		text-shadow: 1px 1px 1px #000, 2px 2px 0px #999;
+	}
+		
+	main { padding: 0; }
+	
+	section { width: 100%; }
+	
+	main section {
+		border: none;
+	}	
+
+	div.top_gutter { border-top: none; }
+	section.bottom_gutter { border-bottom: none; }	
+
+	h1 { 
+		padding: 2em .5em .5em .5em; color: #000; 
+		font-size: 45px; letter-spacing: 2px; font-weight: bold;
+		text-shadow: 1px 1px 1px #fff, 3px 3px 0px #999;
+		line-height: 1.1;
+	}		
+	
+	.grid_1, .grid_2, .grid_3  { display: block; margin-bottom: 0; }
+	
+	.grid_1 { grid-template-columns: 1fr; }
+	.grid_2 { grid-template-columns: 1fr 1fr; }
+	.grid_3 { grid-template-columns: 1fr 1fr 1fr; }
+	
+	div.box { margin: 0; padding: 1.5em .75em 1.5em 1em; 
+		/* border-top: 5px solid #999; */
+	}
+	div.box.white { border: none; padding: 1em; }
+	div.box.highlighted { width: 100%; }
+	div.box.highlighted .content {
+	  position: static;
+    transform: none;
+		border: none;
+	  padding: 1.5em 1em 1.75em 1.5em;
+	  font-size: 100%;
+		line-height: 1.5;
 	}
 	
-			header section a {
-				font-size: 40px; letter-spacing: 1px; 
-				text-shadow: 1px 1px 1px #000, 2px 3px 0px #999;
-			}
-			
-	div.pre_footer { 
-		border-bottom: 4px dotted #72a0c1;;
-	}			
-				
-	main { padding: 0; }
-	section { width: 100%; }
-	main section { border: none; }	
+	div.box.wide {
+		padding-left: 1em; padding-right: 1em;
+	}		
 
-	h1 { 	font-size: 11vw; letter-spacing: .2vw; }
-	h2 { 	font-size: 38px; letter-spacing: normal; 
-				text-shadow: 1px 1px 1px #fff, 2px 2px 0px #999;}	
-	
-	div.panel { border-top: 4px dotted #72a0c1; }
-	div.panel div.closed { padding: 3.6em 0.8em 3em 0.8em; }
-	div.panel div.interior { padding: 2em 0.8em 3em 0.8em; }
-	div.panel:not(:first-child) div.interior { padding-top: 2em; }
-		
-	.grid_1, .grid_2, .grid_3  { display: block; margin: 0; }
-	div.box { margin-bottom: 1em; padding: .75em; }
-
-
-	/* SPECIAL CASES */	
-	div.hud { max-width: 38%; right: 25px; } 
-	
-	aside {
-		width: 100%;
-		padding: 0;
-		margin: 0 0 1.5em 0;
-		float: none;
+	div.scale_img { 
+		padding: 1em 2em 0em 2em; box-sizing: border-box;
 	}	
+	div.scale_img img { width: 100%; }
+
+	div.hud { max-width: 35%; } 
 	
+	div.box.centered { margin-bottom: 1em; } 
 }
 
 
@@ -399,6 +458,8 @@ table {
 /* 	=========================================
 		QUIRKY THINGS
 		========================================= */
+
+
 		div.spinner {
 			visibility: visible;
 			width: 32px;
@@ -416,6 +477,9 @@ table {
 			display: inline-block;
 			width: 32px;
 		}
+
+
+
 		
 		/* break long words */
 		.break_me {
@@ -431,6 +495,7 @@ table {
 /* 	=========================================
 		DEBUGGING
 		========================================= 
+
 		main section {
 			background-color: Orange;
 			border: 1em solid Red;
@@ -442,17 +507,9 @@ table {
 		
 		*/
 		
-
-body.debug section.ruler {
-	background-image: url(../images/ruler.png);
-	background-repeat: no-repeat;
-}		
-@media all and (max-width: 1190px) { 
-	body.debug section.ruler {
-		background-image: none;
-	}
-	body.debug header.ruler {
-		background-image: url(../images/ruler.png);
-		background-repeat: no-repeat;
-	}		
-}		
+		main {
+			background-color: #eee;	
+		}
+		
+		
+		

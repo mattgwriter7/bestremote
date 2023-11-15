@@ -1,0 +1,18 @@
+NOTES
+=====
+
+	left off: tweaked livemobile
+	
+	next: * add "aside"
+				* add indents? class="code"
+				* add Yellow Post-it to "HEY NOW!"
+				* add google icons/glyphs
+				
+
+
+	other:			
+
+	TIDBITS
+	* poker - I once bought a computer
+						with the winnings!
+	
