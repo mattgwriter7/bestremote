@@ -1,16 +1,22 @@
 NOTES
 =====
 
-	left off: tweaked livemobile
-	
-	next: * add "aside"
-				* add indents? class="code"
-				* add Yellow Post-it to "HEY NOW!"
-				* add google icons/glyphs
+	left off: added google icons/glyphs
+						started Little Touches write-up
+	next: * convert to HTML (no PHP)
+				* find better mono space font stack
+				* add 
+					* indenting?
+					* class="code" (mono)
+					* block quote
 				
 
 
 	other:			
+
+	NEEDED PANELS
+	* Background (why I made this site)
+	* 
 
 	TIDBITS
 	* poker - I once bought a computer

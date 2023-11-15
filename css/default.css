@@ -197,22 +197,23 @@ table {
 		}		
 
 		aside {
-			width: 50%;
-			padding: 0;
-			margin: 0 0 .5em 1.5em;
+			width: 50%; 
+			padding: 0; margin: 0 0 1.5em 1.5em;
 			float: right;
-			background-color: #eee;
 			box-sizing: border-box;
 			line-height: 0;
 		}
 		
-		aside img { width: 100%; }
-		
-		aside div {
-			line-height: 1.2;
-			padding: 8px 10px 10px 15px;
-			background-color: #ddd;			
-		}
+					aside img { width: 100%; }
+					
+					aside div { 
+						line-height: 1.2;
+						padding: 8px 10px 12px 15px;
+					}
+					
+					aside div:not(:first-child) {
+						background-color: #ddd;			
+					}
 		
 /* 	=========================================
 		CUSTOM SELECTORS
@@ -226,7 +227,7 @@ table {
 			height: 200px;
 		}
 
-		div.hud {
+		div.sticky {
 			position: absolute;
 			right: 10px;
 			top: 25px;
@@ -249,6 +250,7 @@ table {
 			font-size: 130%;
 			position: relative;
 			box-sizing: border-box;
+			clear: both;
 		}
 		
 		div.panel div.closed { padding: 3.6em 2em 3em 2em; line-height: 2; }
@@ -293,11 +295,14 @@ table {
 		.mono			{ font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; }	
 
 		b.o, b.r, b.m { font-weight: normal; }
-		b.o, h2				{ font-family: 'Oswald', sans-serif;  }
-		b.r, h2				{ font-family: 'Roboto Slab', serif;  }
-		b.m, h2				{ font-family: Courier New,Courier,Lucida Sans 	
-										Typewriter,Lucida Typewriter,monospace; }	
-
+		b.o   				{ font-family: 'Oswald', sans-serif;  }
+		b.r   				{ font-family: 'Roboto Slab', serif;  }
+		b.m 					{ font-family: Courier New, Courier, Lucida Sans 	
+											Typewriter, Lucida Typewriter, monospace; }	
+											
+						b.m {font-weight: bold; }						
+						/* 	^ the Mono version *is* bolded cuz it looks better that way */
+						
 		/* DROP CAP */
 		/* 	this dropcap code was adapted from
 				https://www.newyorker.com/ */
@@ -318,28 +323,26 @@ table {
 
 		
 		/* font sizing  */
-		.tiny { font-size: 72%; }
-		.small { font-size: 80%; }
-		.big { font-size: 120%; letter-spacing: 1px; }
-		.huge { font-size: 150%; letter-spacing: 1px; }
-		.note { font-size: 80%; line-height: 1.2; }
+		.tiny 	{ font-size: 72%; }
+		.small 	{ font-size: 90%; }
+		.normal { font-size: 100%; }
+		.big 		{ font-size: 120%; letter-spacing: 1px; }
+		.huge 	{ font-size: 150%; letter-spacing: 1px; }
+		.note 	{ font-size: 80%; line-height: 1.2; }
 				/* remove bullet if this note is a list item */
 				li.note { list-style: none;	 }
 				
 		/* spacing */
+		.short { margin-bottom: 0; }
 		h1.short,
 		h2.short { margin-bottom: 0; }
 		.grid_1.short, .grid_2.short, .grid_3.short {
     	margin-bottom: 0;
 		}			
+		
+		.tall { margin-bottom: .25em; }
 		li.tall { margin-bottom: .25em; }	
 		ul.tall, ol.tall { margin-bottom: .75em; }
-		
-		
-		
-		
-		
-		
 		
 /* 	=========================================
 		MOBILE AND NARROW DEVICES
@@ -381,7 +384,7 @@ table {
 
 
 	/* SPECIAL CASES */	
-	div.hud { max-width: 38%; right: 25px; } 
+	div.sticky { max-width: 38%; right: 25px; } 
 	
 	aside {
 		width: 100%;
@@ -399,6 +402,33 @@ table {
 /* 	=========================================
 		QUIRKY THINGS
 		========================================= */
+		
+		/* positioning ( usually for icons ) */
+		.icn_fix,
+		._1x, ._2x, ._3x, ._4x, ._5x, 
+		.minus_1x, .minus_2x, .minus_3x, .minus_4x, .minus_5x {
+			position: relative;
+		}		
+					._1x { top: 1px; }
+					._2x { top: 2px; }
+					._3x { top: 3px; }
+					._4x { top: 4px; }
+					._5x { top: 5px; }
+		.icn_fix { left: -3px; top: 5px; }
+
+		/* Break long words */
+		.break_me {
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			word-break: break-all;
+			word-break: break-word;
+			hyphens: auto;
+		}
+
+		/* Clear fix */		
+		.clr { clear: both; }
+
+		/* Spinner stuff */
 		div.spinner {
 			visibility: visible;
 			width: 32px;
@@ -417,16 +447,9 @@ table {
 			width: 32px;
 		}
 		
-		/* break long words */
-		.break_me {
-			overflow-wrap: break-word;
-			word-wrap: break-word;
-			word-break: break-all;
-			word-break: break-word;
-			hyphens: auto;
+		.placeholder {
+			background-color: yellow;
 		}
-		
-		.clr { clear: both; }
 
 /* 	=========================================
 		DEBUGGING
